@@ -3,7 +3,7 @@
   Enjoy!
 
   ## Screenshot
-  ![Screenshot]
+  ![Screenshot](/images/OOP%20SNIP.PNG)
 
   ## Link to video
   [![Screen Castify video](https://youtu.be/0QI8sRRv0Fo?si=QYe-XcwTgsANHoWP)](https://youtu.be/0QI8sRRv0Fo?si=QYe-XcwTgsANHoWP)
