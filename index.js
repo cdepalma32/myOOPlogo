@@ -9,7 +9,7 @@ const questions = [
     name: "text",
     message: "Enter up to 3 text characters. \n NOTE: text will be capatilized automatically.",
     validate: (input) => {
-      if (input == "" || input > 3) {
+      if (input === "" || input.length < 3 || input.length > 3) {
         return console.log(
           "\n Cannot proceed without at least 1-3 text characters!"
         );
@@ -22,11 +22,11 @@ const questions = [
     type: "input",
     name: "textcolor",
     message:
-      "What text color would you like? Enter a color keyword or a hexadecimal number.",
+      "What text color would you like? Enter a color keyword or a hexadecimal number (example: #2471A3).",
     validate: (input) => {
       if (input == "") {
         return console.log(
-          "\n This is required! Please provide a color keyword or a hexadecimal number for your text color."
+          "\n This is required! Please provide a color keyword or a hexadecimal number for your text color (example: #2471A3)."
         );
       } else {
         return true;
@@ -52,11 +52,11 @@ const questions = [
     type: "input",
     name: "shapecolor",
     message:
-      "What color would you like your shape to be? Enter a color keyword or a hexadecimal number.",
+      "What color would you like your shape to be? Enter a color keyword or a hexadecimal number (example:#2471A3).",
     validate: (input) => {
       if (input == "") {
         return console.log(
-          "\n This is required! Please provide a color keyword or a hexadecimal number for your shape."
+          "\n This is required! Please provide a color keyword or a hexadecimal number for your shape (example: #2471A3)."
         );
       } else {
         return true;
@@ -67,7 +67,9 @@ const questions = [
 
 function writeToFile(answers) {
   let finalProduct;
-  let svgEl = `<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg"> <style> .svg { font: 50px sans-serif }</style>`;
+  let svgEl = `<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg"> 
+    <style>.svg { font: 50px sans-serif }</style>
+    <rect width="100%" height="100%" fill="white"/>`;
 
   let text = `${answers.text}`;
   text = text.toUpperCase();
@@ -85,7 +87,7 @@ function writeToFile(answers) {
   } else {
     const newShape = new Square(`${answers.shapecolor}`, text, `${answers.textcolor}`);
     svgEl += newShape.render();
-    svgEl += `<text x="100" y="115" class="svg" fill="${answers.textcolor}">${text}</text></svg>`;
+    svgEl += `<text x="60" y="115" class="svg" fill="${answers.textcolor}">${text}</text></svg>`;
     finalProduct = svgEl;
   }
 
