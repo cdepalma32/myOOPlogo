@@ -1,7 +1,6 @@
 # My OOP Logo Generator
-  Here, you can create your very own README in order to focus on some more important tasks!
-  Enjoy!
-
+  Here, you can create your very own custom SVG file.
+  
   ## Screenshot
   ![Screenshot](/images/OOP%20SNIP.PNG)
 
