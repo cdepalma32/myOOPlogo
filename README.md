@@ -5,7 +5,7 @@
   ![Screenshot](/images/OOP%20SNIP.PNG)
 
   ## Link to video
-  [![Screen Castify video](https://youtu.be/0QI8sRRv0Fo?si=QYe-XcwTgsANHoWP)](https://youtu.be/0QI8sRRv0Fo?si=QYe-XcwTgsANHoWP)
+  [![Screen Castify video](https://www.youtube.com/watch?v=kQzM_74bEw4)](https://www.youtube.com/watch?v=kQzM_74bEw4)
 
   ## Description
   This application uses node.js and inquirer to take user response/input to prompts (text, color, shape) and creates a logo, which is then saved as an SVG file 'logo.svg' at 300x200px.  The user may choose a 3-character text input (the text cannot be less than 3 or more than 3 characters), the shape's text color and background:  who can both be chosen either by the input of a basic color name or hexadecimal color code, and the shape (circle, triangle or square).  After being saved as an svg file, when opened in the browser, the user sees their SVG file, as created.

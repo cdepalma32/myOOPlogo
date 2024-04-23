@@ -1,8 +1,9 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-const { Shape, Circle, Triangle, Square } = require('./lib/shapes');
+const inquirer = require("inquirer"); // Import inquirer
+const fs = require("fs"); // Import fs
+const { Shape, Circle, Triangle, Square } = require('./lib/shapes'); // Imports Shape, Circle, Triangle and Square classes from shapes.js
 
-// Line of questioning
+// Line of questioning // defines the questions that will be presented to the user during the inquirer prompt.
+// Questions include: type, name, message & validation function to ensure valid input.
 const questions = [
   {
     type: "input",
@@ -65,6 +66,8 @@ const questions = [
   }
 ]
 
+// Takes the user's answers from the prompt and generates an SVG image based on the selected shape, shape color,
+// text and text color.  Then it writes the SVG content to a file named logo.svg in the examples directory.
 function writeToFile(answers) {
   let finalProduct;
   let svgEl = `<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg"> 
@@ -91,15 +94,19 @@ function writeToFile(answers) {
     finalProduct = svgEl;
   }
 
+  // Logs messgae indicating whether the file was successfully generated or if there was an error.
+  // Writes the generated SVG content stored in finalProduct to a file named logo.svg in examples directory.
   fs.writeFile('./examples/logo.svg', finalProduct, (err) =>
     err ? console.log(err) : console.log('Generated logo.svg!')
   );
 }
 
+// Initiates the inquirer prompt by calling inquirer.prompt(questions) and passes the user's ansers
+// to the writeToFile function
 function init() {
   inquirer.prompt(questions)
     .then(answers => writeToFile(answers))
 }
 
-// Start on load
+// Starts the app, calling init function
 init(); 
