@@ -5,7 +5,7 @@
   ![Screenshot](/images/OOP%20SNIP.PNG)
 
   ## Link to video
-  [![Watch the video](https://youtu.be/zBeGIe9IiWI)](https://youtu.be/zBeGIe9IiWI)
+  [![Watch the video](https://youtu.be/bDy5vKpaask)](https://youtu.be/bDy5vKpaask)
 
 
   ## Description
@@ -25,6 +25,9 @@
   
   ## Usage
   This application allows you to create a custom logo in SVG format. Follow the prompts to choose your logo's text, colors, and shape.
+
+  ## Example SVG
+  See an example of the generated SVG file in the [examples folder](./examples/).
   
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
