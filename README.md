@@ -20,8 +20,11 @@
   - [Questions](#questions)
   
   ## Installation
+
+  ``` bash
   npm i  
   node index.js
+  ```
   
   ## Usage
   This application allows you to create a custom logo in SVG format. Follow the prompts to choose your logo's text, colors, and shape.
@@ -39,7 +42,11 @@
   For contributions, please contact me directly.
 
   ## Tests
- The Jest tests are located in the `/lib` folder. To ensure the reliability of the code, you can run these tests by executing:  npm run test.
+ The Jest tests are located in the `/lib` folder. To ensure the reliability of the code, you can run these tests by executing:  
+ ``` bash
+ npm run test.
+ ```
+ 
 
 
   ## Questions
