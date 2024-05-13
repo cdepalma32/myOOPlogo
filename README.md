@@ -26,7 +26,8 @@
   This application allows you to create a custom logo in SVG format. Follow the prompts to choose your logo's text, colors, and shape.
   
   ## License
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
+
   This project is licensed under the MIT license.  
  [View License](https://opensource.org/licenses/MIT)
 
